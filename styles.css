@@ -1,0 +1,178 @@
+/* Reset - meyerweb*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Start of my styles */
+
+/* custom fonts */
+
+@font-face {
+  font-family: 'Young-Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+
+
+
+
+/* variables */
+:root {
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-dark-raspberry: hsl(332, 51%, 32%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+
+
+  --font-size-paragraph: 0.858rem;
+  --font-size-header: 1.8rem;
+
+
+  --font-family-primary: 'Young-Serif', sans-serif;
+  --font-family-secondary: 'Outfits', sans-serif;
+
+  --gap-size-primay: 0.6rem;
+  --gap-size-secondary: 0.5rem;
+
+  --font-weight-primary: 700;
+  --font-weight-secondary: 600;
+  --font-weight-additional: 400;
+
+}
+
+
+
+/* styling starts */
+
+/* layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: var(--gap-size-primay);
+}
+
+
+
+/* the banner */
+.banner-container__image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-container {
+  height: 20vh;
+}
+
+
+
+.page-header {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-header);
+  color: var(--color-dark-charcoal);
+  font-weight: var(--font-weight-secondary);
+}
+
+
+
+p,
+li,
+b,
+td {
+  font-family: var(--font-family-secondary);
+  color: var(--color-wenge-brown);
+  font-size: var(--font-size-paragraph);
+  line-height: 1.7;
+}
+
+
+
+.preperation-block {
+  width: 100%;
+  height: 10rem;
+  padding: 8%;
+  background-color: var(--color-rose-white);
+}
+
+
+.preperation-block__list {
+  list-style-type: unset;
+}
+
+.preperation-block__list > li {
+  font-size: 0.5rem;
+}
+
+.preperation-block__list-content-container {
+  font-size: 1rem;
+}
+
+.preperation-block__list > li::marker {
+  color: var(--color-dark-raspberry);
+
+}
+
+
+
+.preperation-block__header {
+  color: var(--color-dark-raspberry);
+  font-weight: 600;
+}
+
+b {
+  font-weight: var(--font-family-primary);
+}
